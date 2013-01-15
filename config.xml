@@ -3,6 +3,7 @@
 	<name>Prueba1</name>
 	<description>Prueba_1</description>
 	<author href="http://www.settingconsultoria.com" email="">CLG</author>
+	<gap:plugin name="ChildBrowser" /> 
   <preference name="phonegap-version" value="2.1.0" />
   <preference name="fullscreen" value="true" />
   <preference name="orientation" value="default" />
