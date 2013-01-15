@@ -2,8 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.pruebas.uno" version = "2.2.0">
 	<name>Prueba1</name>
 	<description>Prueba_1</description>
-	<author href="http://www.settingconsultoria.com" email="">CLG</author>
-	<gap:plugin name="ChildBrowser" /> 
+	<author href="http://www.settingconsultoria.com" email="">CLG</author>	
   <preference name="phonegap-version" value="2.1.0" />
   <preference name="fullscreen" value="true" />
   <preference name="orientation" value="default" />
@@ -23,4 +22,6 @@
   <feature name="http://api.phonegap.com/1.0/media"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
+  <gap:plugin name="ChildBrowser" /> 
+  <access origin="*" />
 </widget>
