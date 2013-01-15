@@ -92,8 +92,11 @@
                     var compassWatchID, geoWatchID;
                     alert('load');
                     document.addEventListener("deviceready", function () {
-                        alert('device ready');
-                        window.plugins.childBrowser.showWebPage('http://google.com');
+                        alert('device ready');                        
+                        window.plugins.childBrowser.openExternal('http://www.google.com');
+                        alert('windowOpen');
+                        window.open('http://www.google.com');
+                        alert('sigue');
                         // Compass                            
                         compassWatchID = navigator.compass.watchHeading(function (heading) {
                             $('span#heading').html(heading.magneticHeading.toFixed(2) + '&#176;');
