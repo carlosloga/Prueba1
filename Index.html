@@ -13,13 +13,13 @@
         <div data-role="page" id="page1">
             <div data-theme="e" data-role="header">
                 <h3>
-                    PG y jQM project
+                    PG y jQM y CB project
                 </h3>
             </div>
             <div data-role="content">
                 <div>
                     <b>
-                        PG y JQM project
+                        PG y JQM + CB project
                     </b>
                 </div>
                 <ul data-role="listview" data-divider-theme="e" data-inset="true">
@@ -93,6 +93,7 @@
                     alert('load');
                     document.addEventListener("deviceready", function () {
                         alert('device ready');
+                        window.plugins.childBrowser.showWebPage('http://google.com');
                         // Compass                            
                         compassWatchID = navigator.compass.watchHeading(function (heading) {
                             $('span#heading').html(heading.magneticHeading.toFixed(2) + '&#176;');
